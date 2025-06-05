@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIDIS - Plataforma Virtual de Atención a la Ciudadanía </title>
+  <link rel="shortcut icon" href="img/midis_favicon.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9YW9VBCM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SM9YW9VBCM');
+</script>
+</head>
+
+<body>
+
+  <!---
+    navbar-expand-md: apila los elementos que se encuentran dentro de la barra verticalmente
+    navbar-light: esta clase establecerá el color del texto en oscuro. Esto se usa cuando se usa un color de fondo claro.
+    d-sm-none d-md-block: Oculto solo en sm https://getbootstrap.com/docs/5.0/utilities/display/
+  -->
+  <nav class="navbar navbar-expand-md  d-none d-md-block shadow bg-white navbar-dark sticky-top " style="border-bottom: 2px solid rgb(98, 105, 110);">
+    <div class="container">
+      <div class="w-100 d-flex justify-content-between ">
+        <div class="d-flex mt-3">
+          <div class="nav-icon-insignia"><img src="img/00Cabezal/midis.png" style="height: 35px;"></div>
+          <!-- <div class="nav-icon-insignia"><img src="img/Insignia-Peru.png" style="height: 40px;"></div>
+          <div class="nav-icon-peru">PERÚ</div>
+          <div class="nav-icon-midis">Ministerio <br> de desarrollo <br> e Inclusión Social</div> -->
+        </div>
+        <div class="d-flex">
+          <div class="nav-icon-insignia"><img src="img/00Cabezal/punche.png" style="height: 50px;"></div>
+          <!-- <div class="nav-icon-peru">PERÚ</div>
+          <div class="nav-icon-midis">Ministerio <br> de desarrollo <br> e Inclusión Social</div> -->
+        </div>
+        <div class="d-none">
+          <div class="nav-icon-insignia"><img src="img/00Cabezal/bicentenario.png" style="height: 60px;"></div>
+          <!-- <div class="nav-icon-peru">PERÚ</div>
+          <div class="nav-icon-midis">Ministerio <br> de desarrollo <br> e Inclusión Social</div> -->
+        </div>
+        <!-- <div class="nav-icon-title" style="margin: 0px 20px; position: relative ;">
+          <strong class="fs-4"> PLATAFORMA VIRTUAL</strong>
+          <div class="fs-3">
+            <strong>de Atención a la Ciudadania <strong>Midis</strong></strong>
+          </div>
+          <div class="content-line">
+            <p class="line-text-title"></p>
+            <p class="line-text-title"></p>
+            <p class="line-text-title"></p>
+          </div>
+          
+        </div> -->
+      </div>
+    </div>
+    <div>
+      <section class="seccionHead">
+        <ul>
+          <li class="borderRight">
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="borderRight">
+            <a href="#enfocarProgramsSociales">PROGRAMAS SOCIALES</a>
+          </li>
+          <li class="borderRight">
+            <a href="#enfocarCse">CONSULTA TU CSE</a>
+          </li>
+          <li class="borderRight">
+            <a href="#enfocarOtrosServicios">OTROS SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#enfocarCanalesAtencion">CANALES DE ATENCIÓN</a>
+          </li>
+      </ul>
+      </section>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <!---
+    navbar-expand-lg: apila los elementos que se encuentran dentro de la barra verticalmente
+    navbar-light: esta clase establecerá el color del texto en oscuro. Esto se usa cuando se usa un color de fondo claro.
+    navbar-dark: esta clase establecerá el color del texto en claro. Esto se usa cuando se usa un color de fondo oscuro.
+    shadow: Agregue o elimine sombras a los elementos (Borde de sombra)
+    d-md-none: Oculto hasta la medida media
+  -->
+  <nav class="navbar d-md-none  navbar-expand-sm bg-white navbar-dark sticky-top">
+    <div class="container d-flex justify-content-between align-items-center" style="flex-wrap: nowrap;">
+      <img src="img/00Cabezal/midis.png" style="width: 130px;" alt="" srcset="">
+      <img src="img/00Cabezal/punche.png" style="width: 70px;" alt="" srcset="">
+      <img src="img/00Cabezal/bicentenario.png" style="width: 100px;" alt="" srcset="">
+      <!-- <div class="nav-icon-title-fone">
+        PLATAFORMA VIRTUAL
+        FS-3 SE se pone tamañno de la letra responsive  econ bootstrap
+        <div>
+          de Atención a la Ciudadania Midis
+        </div>
+      </div> -->
+    </div>
+  </nav>
+  <div class="shadow d-md-none fixed-static" style="background: rgb(204, 187, 175); width: 100%; height: 38px;position: fixed;z-index: 10;">
+    <section class="seccion">
+      <ul>
+        <li class="borderRight">
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="borderRight">
+          <a href="#">PROGRAMAS SOCIALES</a>
+        </li>
+        <li class="borderRight">
+          <a href="#enfocarCse">CONSULTA TU CSE</a>
+        </li>
+        <li class="borderRight">
+          <a href="#enfocarOtrosServicios">OTROS SERVICIOS</a>
+        </li>
+        <li>
+          <a href="#enfocarCanalesAtencion">CANALES DE ATENCIÓN</a>
+        </li>
+    </ul>
+    </section>
+  </div>
+  <!-- Close Header -->
+
+  <!-- Start Banner Hero -->
+  <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block d-lg-block">
+    <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+    <div class="carousel-inner">
+      <div class="carousel-item active contenedor">
+        <!-- <section class="seccion">
+          <ul>
+            <li class="borderRight">
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="borderRight">
+              <a href="#enfocarProgramsSociales">PROGRAMAS SOCIALES</a>
+            </li>
+            <li class="borderRight">
+              <a href="#enfocarCse">CONSULTA TU CSE</a>
+            </li>
+            <li class="borderRight">
+              <a href="#enfocarOtrosServicios">OTROS SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#enfocarCanalesAtencion">CANALES DE ATENCIÓN</a>
+            </li>
+        </ul>
+        </section> -->
+        <img src="img/portada1000a.png" class="d-block w-100" alt="...">
+        <div class="articuloPrincipal">
+          <h1>PLATAFORMA VIRTUAL</h1>
+          <h4 id="enfocarProgramsSociales" ><strong>DE ATENCIÓN A<br>LA CIUDADANÍA</strong></h4>
+        </div>
+        <div class="principalesServicios">
+          <h4><strong>MINISTERIO DE DESARROLLO E INCLUSIÓN SOCIAL - MIDIS</strong></h4>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+  </div>
+  <div class="principalesServicios2">
+    <h4><strong>PRINCIPALES SERVICIOS</strong></h4>
+  </div>
+  <div class="progrmasSociles">
+    <div><h4><strong>PROGRAMAS SOCIALES</strong> </h4></div>
+    <div class="progrmasSocilesDiv">
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/pension65" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/01pension/icoGrisPension.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/01pension/icoAzulPension.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/01pension/logoPension.png" alt="">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/contigo" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/02contigo/icoGrisContigo.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/02contigo/icoAzulContigo.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/02contigo/logoContigo.png" alt="">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/juntos" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/03juntos/icoGrisJuntos.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/03juntos/icoAzulJuntos.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/03juntos/logoJuntos.png" style="width: 60px;" alt="">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/qaliwarma" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/04qaliWarma/icoGrisQali.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/04qaliWarma/icoAzulQali.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/04qaliWarma/logoQali.png" alt="" style="width:90px">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/cunamas" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/05cunaMas/icoGrisCuna.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/05cunaMas/icoAzulCuna.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/05cunaMas/logoCuna.png"  style="width: 80px;" alt="">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+      <article class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/foncodes" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/06foncodes/icoGrisFoncodes.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/06foncodes/icoAzulFoncodes.png" alt="">
+            </div>
+            <div  class="logoPS">
+              <img src="img/01ProgramasSociales/06foncodes/logoFoncodes.png" alt="">
+            </div>
+            <div>
+              <img class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+      </article>
+      <article id="enfocarCse" class="progrmasSocilesArticulo">
+        <li>
+          <a href="https://www.gob.pe/pais" >
+            <div>
+              <img class="prender" src="img/01ProgramasSociales/07pais/icoGrisPais.png" alt="">
+              <img class="apagar" src="img/01ProgramasSociales/07pais/icoAzulPais.png" alt="">
+            </div>
+            <div class="logoPS">
+              <img src="img/01ProgramasSociales/07pais/logoPais.png"  style="width: 70px;" alt="">
+            </div>
+            <div>
+              <img class="prender" class="prender" src="img/05masInformacion/masInformacionGris.png" alt="">
+              <img class="apagar" src="img/05masInformacion/masInformacionRojo.png" alt="">
+            </div>
+          </a>
+        </li>
+      </article>
+    </div>
+  </div>
+  <div>
+    <aside id="enfocarOtrosServicios" class="cse contenedor">
+        <img src="img/02Empadronamiento/bannerEmpadronamiento.png" class="d-block w-100 imgCSE" alt="...">
+        <!-- <img src="img/02Empadronamiento/bannerEmpadronamientoMovil.png" class="d-block w-100 imgCSEMovil" alt="..."> -->
+      <article>
+        <h4>
+          CONSULTA LA CLASIFICACIÓN SOCIOECONÓMICA<br>(CSE) DE TU HOGAR E INTEGRANTES
+        </h4>
+        <li>
+          <a href="https://focalizacion.sisfoh.gob.pe/ConsultaCSE/" >
+            <img src="img/02Empadronamiento/consultaHogarGris.png" alt=""
+            onmouseout="this.src='img/02Empadronamiento/consultaHogarGris.png';" 
+            onmouseover="this.src='img/02Empadronamiento/consultaHogarRojo.png';">
+          </a>
+          <a href="http://www.sisfoh.gob.pe/" >
+            <img src="img/05masInformacion/masInformacionGris.png" alt=""
+            onmouseout="this.src='img/05masInformacion/masInformacionGris.png';" 
+            onmouseover="this.src='img/05masInformacion/masInformacionRojo.png';">
+          </a>
+        </li>
+      </article>
+    </aside>
+    <aside id="enfocarOtrosServicios" class="contenedor movilcse">
+      <img src="img/02Empadronamiento/bannerEmpadronamientoMovil2.png" class="d-block w-100" alt="...">
+      <article>
+        <h4>
+          CONSULTA LA CLASIFICACIÓN SOCIOECONÓMICA<br>(CSE) DE TU HOGAR E INTEGRANTES
+        </h4>
+        <li>
+          <a href="https://focalizacion.sisfoh.gob.pe/ConsultaCSE/" >
+            <img src="img/02Empadronamiento/consultaHogarGris.png" alt=""
+            onmouseout="this.src='img/02Empadronamiento/consultaHogarGris.png';" 
+            onmouseover="this.src='img/02Empadronamiento/consultaHogarRojo.png';">
+          </a>
+          <a href="http://www.sisfoh.gob.pe/" >
+            <img src="img/05masInformacion/masInformacionGris.png" alt=""
+            onmouseout="this.src='img/05masInformacion/masInformacionGris.png';" 
+            onmouseover="this.src='img/05masInformacion/masInformacionRojo.png';">
+          </a>
+        </li>
+      </article>
+    </aside>
+    <aside class="otrosServicios">
+      <div  id="enfocarCanalesAtencion"><h4><strong>OTROS SERVICIOS</strong> </h4></div>
+      <div class="otrosServiciosDiv">
+        <ul>
+          <li class="borderRightBlue">
+            <a href="https://app.midis.gob.pe/sis_estadotramite" >
+              <img class="prender" src="img/03OtrosServicios/01seguimiento/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/01seguimiento/rojo.png" alt="">
+              <p>Seguimiento <br>de trámite <br>(app web)</p>
+            </a>
+          </li>
+          <li class="borderRightBlue">
+            <a href="https://mesapartesvirtual.midis.gob.pe/appmesapartesenlinea/inicio?tid=2*mesadepartes" >
+              <img class="prender" src="img/03OtrosServicios/02mesa/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/02mesa/rojo.png" alt="">
+              <p>Mesa de partes <br>digital Midis</p>
+            </a>
+          </li>
+          <li class="borderRightBlue">
+            <a href="https://reclamos.servicios.gob.pe/?institution_id=20" >
+              <img class="prender" src="img/03OtrosServicios/03libro/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/03libro/rojo.png" alt="">
+              <p>Libro de <br>reclamaciones</p>
+            </a>
+          </li>
+          <li class="borderRightBlue">
+            <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=14145" >
+              <img class="prender" src="img/03OtrosServicios/04portal/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/04portal/rojo.png" alt="">
+              <p>Portal de <br>Transparencia</p>
+            </a>
+          </li>
+          <li class="borderRightBlue">
+            <a href="https://www.gob.pe/11779-ministerio-de-desarrollo-e-inclusion-social-programa-de-complementacion-alimentaria-pca" >
+              <img class="prender" src="img/03OtrosServicios/05pca/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/05pca/rojo.png" alt="">
+              <p>Programa de <br>Complementación <br>Alimentaria</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://denuncias.servicios.gob.pe" >
+              <img class="prender" src="img/03OtrosServicios/06masServicios/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/06masServicios/rojo.png" alt="">
+              <p>Denuncia actos <br>de corrupción <br>de funcionarios <br>de esta entidad</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="otrosServiciosDivPequeño">
+        <ul>
+          <li class="borderRightBlue">
+            <a href="https://app.midis.gob.pe/sis_estadotramite" >
+              <img class="prender" src="img/03OtrosServicios/01seguimiento/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/01seguimiento/rojo.png" alt="">
+              <p>Seguimiento de trámite (app web)</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://mesapartesvirtual.midis.gob.pe/appmesapartesenlinea/inicio?tid=2*mesadepartes" >
+              <img class="prender" src="img/03OtrosServicios/02mesa/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/02mesa/rojo.png" alt="">
+              <p>Mesa de partes digital Midis</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="borderRightBlue">
+            <a href="https://reclamos.servicios.gob.pe/?institution_id=20" >
+              <img class="prender" src="img/03OtrosServicios/03libro/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/03libro/rojo.png" alt="">
+              <p>Libro de reclamaciones</p>
+            </a>
+          </li>
+          <li >
+            <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=14145" >
+              <img class="prender" src="img/03OtrosServicios/04portal/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/04portal/rojo.png" alt="">
+              <p>Portal de Transparencia</p>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="borderRightBlue">
+            <a href="https://www.gob.pe/11779-ministerio-de-desarrollo-e-inclusion-social-programa-de-complementacion-alimentaria-pca" target="_blank">
+              <img class="prender" src="img/03OtrosServicios/05pca/azul.png" style="width: 90px;" alt="">
+              <img class="apagar" src="img/03OtrosServicios/05pca/rojo.png" style="width: 90px;" alt="">
+              <p>Programa de Complementación Alimentaria</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://denuncias.servicios.gob.pe" >
+              <img class="prender" src="img/03OtrosServicios/06masServicios/azul.png" alt="">
+              <img class="apagar" src="img/03OtrosServicios/06masServicios/rojo.png" alt="">
+              <p>Denuncia actos de corrupción de funcionarios de esta entidad</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <aside>
+      <h4>CANALES DE ATENCIÓN</h4>
+    </aside>
+    <div>
+      <div><h4><strong>PRESENCIAL</strong></h4></div>
+      <div class="footerArticulos">
+        
+        <article>
+          <ul>
+            <li>
+              <h5><strong>Sede Central</strong></h5>
+              <p class="texto_delgado" >Av. Paseo de la República N° 3101, San Isidro</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 5:30 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede Lima Centro</strong></h5>
+              <p class="texto_delgado" >Jr. De La Unión N° 246, Cercado de Lima</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 5:30 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede MAC Lima Norte</strong></h5>
+              <p class="texto_delgado" >Av. Los Ángeles 602 urb. El Álamo<br>Comas (sotáno 1)</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 6:00 p.m.<br> Sábados de 8:30 a.m. a 1:00 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede MAC de Ventanilla</strong></h5>
+              <p class="texto_delgado" >Av. La Playa s/n (altura de la urb. Zona <br>
+                Comercial, frente a la plaza Cívica), Ventanilla</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 6:00 p.m.<br> Sábados de 8:30 a.m. a 1:00 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede Huacho</strong></h5>
+              <p class="texto_delgado">Av. Grau N°276 - Huacho (frente a la RENIEC)</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 5:30 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede San Juan de Lurigancho</strong></h5>
+              <p class="texto_delgado">Av. El Bosque N° 331 – Urb. Canto Grande<br> (Ref. espalda de SEDAPAL de la Av. <br>Próceres de la Independencia)</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:00 a.m. a 5:00 p.m.</strong></p>
+            </li>
+          </ul>
+        </article>
+        
+        <article>
+          <ul>
+            <li>
+              <h5><strong>Sede MAC Lima Sur</strong></h5>
+              <p class="texto_delgado" >Av. Circunvalación N° 1801, (segundo<br>
+                piso del centro comercial Open Plaza <br>
+                Atocongo), San Juan de Miraflores</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 6:00 p.m. <br> Sábados de 8:30 a.m. a 1:00 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede MAC Junín</strong></h5>
+              <p class="texto_delgado" >Av. Ferrocarril N° 146 - 150, (Centro<br> Comercial Open Plaza-esquina con prolongación San <br> Carlos 136) Huancayo</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:30 a.m. a 5:00 p.m. <br>Sábados de 8:30 a.m. a 1:00 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede Villa María del Triunfo</strong></h5>
+              <p class="texto_delgado">Jr. José Galvez N° 895 (ref. plaza de armas de VMT)</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:00 a.m. a 5:00 p.m.</strong></p>
+            </li>
+            <li>
+              <h5><strong>Sede Pachacútec - Ventanilla</strong></h5>
+              <p class="texto_delgado" >Av. F s/n Sector B GR B1 - proyecto Piloto <br> 
+                Nuevo Pachacútec</p>
+              <p><strong><img class="iconoImg" src="img/06IconosAdicionales/relogAzul.png" alt=""> Lunes a viernes de 8:00 a.m. a 1:00 p.m.<br> y 2:00 p.m. a 5:00 p.m.</strong></p>
+            </li>
+            
+          </ul>
+
+        </article>
+      </div>
+    </div>
+    <div>
+      <div><h4><strong>VIRTUAL</strong></h4></div>
+      <div  class="footerVirtual">
+        <ul>
+          <li><strong><img class="iconoImg" src="img/06IconosAdicionales/correo.png" alt=""></strong> contacto.portal@midis.gob.pe</li>
+          <li><strong><img class="iconoImg" src="img/06IconosAdicionales/correo.png" alt=""></strong> anticorrupcion@midis.gob.pe</li>
+          <li>
+            <a href="https://app.midis.gob.pe/Sis_Chatbot" >
+              <img class="prender" src="img/04Suyay/suyayGris.png" alt="">
+              <img class="apagar" src="img/04Suyay/suyayRojo.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div><h4><strong>TELEFÓNICO</strong></h4></div>
+      <div class="footerTelefonico">
+        <ul>
+          <li><img class="iconoImg" src="img/06IconosAdicionales/telefono.png" alt=""> Central telefónica <br><strong>   (01) 631 80 00</strong> </li>
+          <li><img class="iconoImg" src="img/06IconosAdicionales/telefono.png" alt=""> Línea social gratuita<br><strong>   101 </strong></li>
+        </ul>
+        <div><p><img class="iconoImg" src="img/06IconosAdicionales/relogBlanco.png" alt=""><strong> Lunes a viernes de 8:30 a.m. a 5:30 p.m.</strong></p></div>
+      </div>
+      
+    </div>
+    <div>
+      <!-- Contador de visitas -->
+
+        <!-- <a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis"> -->
+      
+
+    <!-- Fin Contador de visitas -->
+    </div>
+    <!-- <p >Contador de visitas
+      <img style="display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=13881">
+      <img style="display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=14190"> Produccion 
+    </p> -->
+  </footer>
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
