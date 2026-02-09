@@ -867,6 +867,9 @@ footer div{
 .footerArticulos article ul{
     text-align: left;
     padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;  /* distancia uniforme entre todos los li */
 }
 .footerArticulos article ul li {
     padding-bottom: 10px;
@@ -1139,7 +1142,9 @@ footer div{
     .footerTelefonico div p{
         font-size: 17px;
     }
-
+    .iconoImg{
+        height: 24px;
+    }
 }
 @media (max-width: 576px) {
     
@@ -1171,7 +1176,9 @@ footer div{
     .movilcse article li a img{
         width: 85px;
     }
-
+    .iconoImg{
+        height: 20px;
+    }
 }
 
 
